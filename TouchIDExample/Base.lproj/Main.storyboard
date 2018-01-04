@@ -1,24 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" title="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginVC" customModule="TouchIDExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1i-eo-1sS">
+                                <rect key="frame" x="112.5" y="308.5" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.47058823529411764" green="0.52941176470588236" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="WJ9-zC-jiL"/>
+                                    <constraint firstAttribute="height" constant="50" id="wpA-3l-mRU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <state key="normal" title=" Touch ID" image="Touch_ID-RED-40px">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="id3-cc-SoY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.023529411764705882" green="0.082352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="o1i-eo-1sS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Icp-sS-0QU"/>
+                            <constraint firstItem="o1i-eo-1sS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rBe-Ci-iPk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--DogPicVC-->
+        <scene sceneID="b2x-9r-QLw">
+            <objects>
+                <viewController storyboardIdentifier="DogPicVC" title="DogPicVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zkS-NU-shd" customClass="DogPicVC" customModule="TouchIDExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Juc-X8-A0g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kWX-3u-bU0">
+                                <rect key="frame" x="67" y="189.5" width="240" height="288"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll001" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-Qk-c0U">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apf-fp-ANR">
+                                        <rect key="frame" x="0.0" y="248" width="240" height="40"/>
+                                        <color key="backgroundColor" red="0.040132745669999997" green="0.40521890859999998" blue="0.13352098970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                        <state key="normal" title="Exit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exitButton:" destination="zkS-NU-shd" eventType="touchUpInside" id="EQ0-7B-36y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47058823529411764" green="0.52941176470588236" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kWX-3u-bU0" firstAttribute="centerX" secondItem="Juc-X8-A0g" secondAttribute="centerX" id="GBx-qh-3vk"/>
+                            <constraint firstItem="kWX-3u-bU0" firstAttribute="centerY" secondItem="Juc-X8-A0g" secondAttribute="centerY" id="giE-NS-Bgo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B3f-Gg-8SE"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="s4e-Qk-c0U" id="r02-BR-rZ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5d-SB-ReM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--VibrateButtonVC-->
+        <scene sceneID="mcj-3J-a4F">
+            <objects>
+                <viewController storyboardIdentifier="VibrateButtonVC" title="VibrateButtonVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GYb-hI-vzn" customClass="VibrateButtonVC" customModule="TouchIDExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cgX-W6-3D6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PI-Vm-FzY">
+                                <rect key="frame" x="124.5" y="315" width="125" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.78871805569999998" blue="0.72976693690000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Vibrate Button"/>
+                                <connections>
+                                    <action selector="vibeButton:" destination="GYb-hI-vzn" eventType="touchUpInside" id="LRq-zF-fMl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5PI-Vm-FzY" firstAttribute="centerX" secondItem="cgX-W6-3D6" secondAttribute="centerX" id="SKn-Ms-Mb3"/>
+                            <constraint firstItem="5PI-Vm-FzY" firstAttribute="centerY" secondItem="cgX-W6-3D6" secondAttribute="centerY" id="v7Z-3x-aL3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kiD-4h-sq1"/>
+                    </view>
+                    <connections>
+                        <outlet property="vibrateButton" destination="5PI-Vm-FzY" id="ShX-Xo-vOn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NdR-hy-2um" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="108"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Touch_ID-RED-40px" width="40" height="40"/>
+        <image name="scroll001" width="240" height="240"/>
+    </resources>
 </document>

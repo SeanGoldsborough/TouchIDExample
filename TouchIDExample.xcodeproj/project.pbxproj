@@ -15,6 +15,10 @@
 		C64266E21FFE9C4D00CE9AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C64266E01FFE9C4D00CE9AD2 /* LaunchScreen.storyboard */; };
 		C64266ED1FFE9C4D00CE9AD2 /* TouchIDExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64266EC1FFE9C4D00CE9AD2 /* TouchIDExampleTests.swift */; };
 		C64266F81FFE9C4D00CE9AD2 /* TouchIDExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64266F71FFE9C4D00CE9AD2 /* TouchIDExampleUITests.swift */; };
+		C64267061FFEA33200CE9AD2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64267051FFEA33200CE9AD2 /* LoginVC.swift */; };
+		C64267081FFEA61700CE9AD2 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64267071FFEA61700CE9AD2 /* Alerts.swift */; };
+		C642670A1FFEA6D000CE9AD2 /* DogPicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64267091FFEA6D000CE9AD2 /* DogPicVC.swift */; };
+		C642670C1FFEAAD500CE9AD2 /* VibrateButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642670B1FFEAAD500CE9AD2 /* VibrateButtonVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		C64266F31FFE9C4D00CE9AD2 /* TouchIDExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64266F71FFE9C4D00CE9AD2 /* TouchIDExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDExampleUITests.swift; sourceTree = "<group>"; };
 		C64266F91FFE9C4D00CE9AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64267051FFEA33200CE9AD2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C64267071FFEA61700CE9AD2 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		C64267091FFEA6D000CE9AD2 /* DogPicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogPicVC.swift; sourceTree = "<group>"; };
+		C642670B1FFEAAD500CE9AD2 /* VibrateButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrateButtonVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 			children = (
 				C64266D41FFE9C4C00CE9AD2 /* AppDelegate.swift */,
 				C64266D61FFE9C4C00CE9AD2 /* ViewController.swift */,
+				C64267051FFEA33200CE9AD2 /* LoginVC.swift */,
+				C64267091FFEA6D000CE9AD2 /* DogPicVC.swift */,
+				C642670B1FFEAAD500CE9AD2 /* VibrateButtonVC.swift */,
+				C64267071FFEA61700CE9AD2 /* Alerts.swift */,
 				C64266D81FFE9C4C00CE9AD2 /* Main.storyboard */,
 				C64266DE1FFE9C4D00CE9AD2 /* Assets.xcassets */,
 				C64266E01FFE9C4D00CE9AD2 /* LaunchScreen.storyboard */,
@@ -263,7 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64266DD1FFE9C4D00CE9AD2 /* TouchIDExample.xcdatamodeld in Sources */,
+				C64267081FFEA61700CE9AD2 /* Alerts.swift in Sources */,
+				C642670A1FFEA6D000CE9AD2 /* DogPicVC.swift in Sources */,
 				C64266D71FFE9C4C00CE9AD2 /* ViewController.swift in Sources */,
+				C642670C1FFEAAD500CE9AD2 /* VibrateButtonVC.swift in Sources */,
+				C64267061FFEA33200CE9AD2 /* LoginVC.swift in Sources */,
 				C64266D51FFE9C4C00CE9AD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
